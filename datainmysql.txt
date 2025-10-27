@@ -1,0 +1,10 @@
+use sjd
+create table bus (BUSNO int(4), LICENCENO varchar(14), DOI date, PRICE decimal(12,2), BUSTYPE varchar(25), DRIVER varchar(25), TOURGUIDE varchar(25), AVAILABLE varchar(2));
+create table employee (EMPNO int(4), ENAME varchar(24), JOB varchar(25), HIREDATE date, SALARY decimal(7,2), COMM decimal(7,2), DEPTNO int(3), PHONENO varchar(25));
+create table customer (CID int(10), CNAME varchar(25),GENDER char(2), AGE int(3) ARRIVAL varchar(100), DESTINATON varchar(100), PAYMENT decimal(10,2), BUSNO int(4), SEATNO int(2), PHONENO varchar(25), DOT date);
+insert into employee values (NULL, 'Aditya Pandey', 'Driver', '2020-11-27', 21000, 0, 10, '9546767456');
+insert into employee values (NULL, 'Shiva Sahu', 'Travel Consultant', '2020-11-27', 0, 2000, 19, '7234657345');
+insert into bus values (NULL, 'GJ05-AH-1257', '2020-11-27', 21000000, 'Seater Bus', NULL, NULL, 'N');
+insert into bus values (NULL, 'GJ05-DF-8766', '2020-11-27', 30000008, 'A/C Sleeper Bus', 'Aditya Pandey', 'Gaurav Singh', 'Y');
+insert into employee values (NULL, 'Gaurav Singh', 'Tour Guide', '2020-11-27', 10000, 0, 13, '9725772644');
+insert into customer values (NULL, 'Jeet Patel', '1', 26, 'Motilal Chowk, Gandhinagar', 'Sarthana National Park, Surat', 13950.0, 109, 19, '7435645644', '2020-12-03');
